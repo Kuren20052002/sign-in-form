@@ -27,7 +27,7 @@ p, legend {
 }
 
 p {
-  margin: 35px;
+  margin: 25px 25px 15px 25px;
 }
 
 #logo{
@@ -46,7 +46,7 @@ p {
 }
 
 #logo-name {
-  font-size: 5rem;
+  font-size: 4.5rem;
   align-self: center;
   color: black;
   font-family: "RocknRoll";
@@ -103,9 +103,35 @@ fieldset {
   height: 30px;
 }
 
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.467);
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+  border-color:rgb(183, 33, 33);
+  box-shadow: 1px 1px 10px red;
+}
+
+
 input:focus {
   outline: none;
+  background-color: rgba(99, 136, 188, 0.674);
+} 
+
+#confirm-button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background-color: rgb(115, 123, 136);
+  color: white;
+  margin: 45px auto auto 60px;
 }
+
+#confirm-button:hover {
+  background-color: rgb(168, 194, 236);
+}
+
 
 @font-face {
   font-family: 'Yuji Syuku Regular';
