@@ -1,3 +1,23 @@
-h2 {
-  color: pink
+body {
+  font-family: 'Yuji Syuku Regular';
+}
+
+.jap {
+  font-family: 'RocknRoll';
+}
+
+
+@font-face {
+  font-family: 'Yuji Syuku Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Yuji Syuku Regular'), url('./Fonts/YujiSyuku-Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'RocknRoll';
+  font-style: normal;
+  font-weight: normal;
+  src: local('RocknRoll'), url('./Fonts/RocknRollOne-Regular.ttf') format('truetype');
 }
