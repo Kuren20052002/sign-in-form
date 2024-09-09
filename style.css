@@ -6,15 +6,50 @@ html, body {
 body {
   font-family: 'Yuji Syuku Regular';
   background-image: url(./Img/background2.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;  
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
+.bg-side {
+  flex: 1 0 45%;
+}
+
+#logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 30%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  margin-top: 10%;
+  padding: 15px 0 15px 0;
+}
+
+#logo-image {
+  object-fit: contain;
+}
+
+#logo-name {
+  font-size: 5rem;
+  align-self: center;
+  color: black;
+  font-family: "RocknRoll";
+  text-overflow:clip;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
 .form-side {
+  flex: 1 0 60%;
   background: #39454e;
   height: 100%;
   width: 55%;
-  min-height: 500px;
+  min-width: 500px;
   margin-left: auto;
 }
 
