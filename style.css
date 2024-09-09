@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -5,16 +8,26 @@ html, body {
 
 body {
   font-family: 'Yuji Syuku Regular';
+  color: white;
   background-image: url(./Img/background2.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;  
   flex-direction: row;
-  box-sizing: border-box;
 }
 
 .bg-side {
   flex: 1 0 45%;
+}
+
+p, legend {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 35px;
 }
 
 #logo{
@@ -22,11 +35,10 @@ body {
   flex-direction: row;
   justify-content: center;
   max-width: 30%;
-  height: 80%;
+  height: 65%;
   background: rgba(255, 255, 255, 0.5);
   margin: auto;
-  margin-top: 10%;
-  padding: 15px 0 15px 0;
+  margin-top: 20%;
 }
 
 #logo-image {
@@ -38,21 +50,62 @@ body {
   align-self: center;
   color: black;
   font-family: "RocknRoll";
-  text-overflow:clip;
+  overflow: hidden;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
 
 .form-side {
-  flex: 1 0 60%;
-  background: #39454e;
+  flex: 0 1 60%;
+  background: rgba(57, 69, 78, 0.937);
   height: 100%;
-  width: 55%;
   min-width: 500px;
   margin-left: auto;
 }
 
+#sign-up-form {
+  width: 100%;
+  background-color: rgba(101, 117, 146, 0.437);
+  padding: 20px;
+  box-shadow: 0px 10px 20px black;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 100%;
+  border: none;
+}
+
+.input-container {
+  display: inherit;
+  flex-direction: column;
+  width: 40%;
+  min-width: 0;
+}
+
+.input-label{
+  font-size: 0.8rem;
+}
+
+.input {
+  font-size: 1.3rem;
+  font-family: inherit;
+  background-color: rgba(255, 228, 196, 0.13);
+  color: white;
+  border-radius: 5px;
+  padding-left: 0.3rem;
+  height: 30px;
+}
+
+input:focus {
+  outline: none;
+}
 
 @font-face {
   font-family: 'Yuji Syuku Regular';
