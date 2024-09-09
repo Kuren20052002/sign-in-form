@@ -1,9 +1,21 @@
-body {
-  font-family: 'Yuji Syuku Regular';
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.jap {
-  font-family: 'RocknRoll';
+body {
+  font-family: 'Yuji Syuku Regular';
+  background-image: url(./Img/background2.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.form-side {
+  background: #39454e;
+  height: 100%;
+  width: 55%;
+  min-height: 500px;
+  margin-left: auto;
 }
 
 
